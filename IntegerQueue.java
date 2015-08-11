@@ -25,7 +25,7 @@ public class IntegerQueue
 	 */
 	public IntegerQueue(int size)
 	{
-		if (size == 0) throw new IllegalArgumentException("You must specify a size greater than zero.");
+		if (size < 1) throw new IllegalArgumentException("You must specify a size greater than zero.");
 		else
 		{
 			this.size = size;
